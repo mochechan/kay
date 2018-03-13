@@ -3,7 +3,6 @@ Refactoring Simple Care (HCOS) https://github.com/scolin912/Simple-Care/
 
 
 done:
-
 非同步執行模組化架構、每個 loop 時間自動測量
 解決當機問題(且不用 watchdog)
 加入超音波測距
@@ -14,5 +13,13 @@ todo:
 將 soft_ap 設定值讀/寫 EEPROM
 將訂閱 mqtt messages 指定執行(例如: 開/關電燈指令)
 同步 NTP 時間
+
+
+# usage:
+將 linkit 7697 插入 usb 
+用 arduino ide 把 kay.ino 打開
+將 wifi_ssid, wifi_password, mqtt_server 改成對的參數
+將程式燒錄進 linkit 7697, 可開啟 serial monitor
+在 ubuntu/rasbian linux 上執行 node mqtt.js 讓後端跑起來
 
 
